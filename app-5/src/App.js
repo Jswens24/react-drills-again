@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Image from './Image';
 
 function App() {
+  const src = 'https://imageio.forbes.com/specials-images/imageserve/6097d7ee81957044af68d9ce/0x0.jpg?format=jpg&width=1200'
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Image src={src} />
     </div>
   );
 }
